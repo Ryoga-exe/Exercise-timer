@@ -6,9 +6,9 @@ function playbeep(isHigh=false) {
 }
 let count = 0;
 window.addEventListener("DOMContentLoaded", function() {
-
     document.getElementById("start").onclick = function() {
         playbeep(count%5==0);
         count++;
+        document.getElementById("circled").classList.toggle("animation1");
     }
 })
